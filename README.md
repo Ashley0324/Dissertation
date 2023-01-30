@@ -28,6 +28,8 @@ open it with Android studio and enter it at the terminal:
 
 Setting - General - Device Management - Trust this apps
 
+3. No physical device found
 
+Check whether the Xcode version matches the IOS device version
 
 
