@@ -11,7 +11,6 @@ This project is a starting point for a Flutter application.
 
 If you have problems with permissions on iOS (e.g. with the camera view not showing up even though camera access is allowed), add this to the podfile of your app's ios directory:
 
-'''
 post_install do |installer|
     installer.pods_project.targets.each do |target|
       flutter_additional_ios_build_settings(target)
@@ -43,4 +42,3 @@ post_install do |installer|
       end
     end
   end
-'''
