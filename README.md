@@ -5,40 +5,29 @@ The program uses the data of the four museums mentioned above for experimental t
 
 ## Overview
 
-This project is a starting point for a Flutter application.
+
+
+## Build
+
+This project needs to be tested on physical equipment (IOS system)，
+open it with Android studio and enter it at the terminal:
+
+'
+ run --no-sound-null-safety --release
+'
+
+
 
 ## Questions
 
-If you have problems with permissions on iOS (e.g. with the camera view not showing up even though camera access is allowed), add this to the podfile of your app's ios directory:
+1. Could not run build/ios/iphoneos/Runner.app
 
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      flutter_additional_ios_build_settings(target)
-      target.build_configurations.each do |config|
-        # Additional configuration options could already be set here
+ open ios/Runner.xcworkspace and signing
+ 
+2. Untrusted developer
 
-        # BEGINNING OF WHAT YOU SHOULD ADD
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
-          '$(inherited)',
+Setting - General - Device Management - Trust this apps
 
-          ## dart: PermissionGroup.camera
-          'PERMISSION_CAMERA=1',
 
-          ## dart: PermissionGroup.photos
-          'PERMISSION_PHOTOS=1',
 
-          ## dart: [PermissionGroup.location, PermissionGroup.locationAlways, PermissionGroup.locationWhenInUse]
-          'PERMISSION_LOCATION=1',
 
-          ## dart: PermissionGroup.sensors
-          'PERMISSION_SENSORS=1',
-
-          ## dart: PermissionGroup.bluetooth
-          'PERMISSION_BLUETOOTH=1',
-
-          # add additional permission groups if required
-        ]
-        # END OF WHAT YOU SHOULD ADD
-      end
-    end
-  end
