@@ -1,16 +1,8 @@
-# test3
+# The museum of museums: an augmented reality application for digital museum heritage 
 
-A new Flutter project.
+The program uses the data of the four museums mentioned above for experimental testing and has achieved good results. It proves that it is feasible to apply augmented reality technology to the field of museum heritage and build a museum of museums.
 
-## Getting Started
+
+## Overview
 
 This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
